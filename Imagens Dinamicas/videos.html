@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p> 
+    <video src="midia/vide.mp4" height="500" controls></video><!--forma simples; pouco usual-->
+
+    <video height="500" controls> <!--forma complexa; utilize para evitar incompatibilidade com outros navegadores. POSTER é usado para adicionar thumb-->
+        <source src="midia/vide.mp4" type="video/mp4">
+        <source src="midia/vide.mv4" type="video/mv4"><!--Utilize handbrake para converter o formato do arquivo-->
+        <source src="midia/vide.ogg" type="video/ogg">
+        <source src="midia/vide.webm" type="video/webm"> <!--ordem de "carregamento" igual ao audio-->
+        <p>Infelizmente seu navegador não consegue reproduzir o vídeo</p>
+    </video>
+
+    <h1>Este vídeo está hospedado em outro servidor (YouTube)</h1><!--mais vantajoso na maioria dos casos-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zzPVcicojrA?si=7Bcdc3io9UAI8686"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--iframe é usado para incorporar vídeos de outros sites, como o youtube. O código do iframe pode ser encontrado na opção "compartilhar" do vídeo desejado. O tamanho do iframe pode ser alterado no código, mas o ideal é manter a proporção 16:9 (largura maior que a altura) para não distorcer o vídeo.-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/485545155?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="REEL"></iframe>
+</body>
+</html>

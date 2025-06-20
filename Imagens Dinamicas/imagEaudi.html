@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador</p>
+    <picture><!--Ctlr + space não funciona no srcset-->
+        <source media="(max-width:750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png"> <!--Estabeleça um min ou max para que determinada imagem seja exibida; caso não se cumpra, o site deverá exibir outra lugar-->
+        <img src="Imagens/foto-g.png" alt="imagem flexivel"><!--utilize uma imagem como base (a maior ou menor); as "alternativas" DEVEM ficar acima dela(ordem crescente ou decrescente)-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/TheLas.m4a" controls ></audio><!--forma simples; pouco usual-->
+    <audio preload="metadata"> <!--preload estabelce como o audio será carregado-->
+        <source src="midia/TheLas.mp3" type="audio/mpeg"> <!--forma complexa; utilize para evitar incompatibilidade-->
+        <source src="midia/TheLas.ogg" type="audio/ogg"> 
+        <source src="midia/TheLas.wav" type="audio/wav"><!--O navegador tentará carregar os aquivos de cima para baixo-->
+        <p>Infelizmente seu navegador não consegue reproduzir os áudios</p>
+    </audio>
+
+</body>
+</html>

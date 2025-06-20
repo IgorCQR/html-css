@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title> <!--Dafont.com-->
+    <style>
+        @font-face {
+            font-family:'carlos';
+            src: url(Fonts/The\ Centurion\ .ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Gothic'; /*nome da fonte*/
+            src: url('Fonts/Gothic\ War.otf') format('opentype'); 
+            font-weight: normal;
+            font-style: normal;
+        }                                               /*tipos de format()
+                                                            - opentype(otf)
+                                                            - truetype(ttf)
+                                                            - embedded-opentype
+                                                            - truetype-aat(Apple Advanced Typography)
+                                                            - SVG*/
+        body{             
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Gothic', Helvetica, sans-serif;
+            font-size: 3em;
+        }
+        h2{
+            font-family: 'carlos', Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título da Primeira fonte(não da pra ler nada)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic eius mollitia repellendus eaque cupiditate officia commodi accusamus, adipisci ex provident aspernatur ad dolore labore reprehenderit pariatur eveniet necessitatibus animi quia.</p>
+    <h2>Teste da fonte número dois(também não da pra ler merda nenhuma)</h2>
+</body>
+</html>

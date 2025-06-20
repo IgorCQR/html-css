@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080600da;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+

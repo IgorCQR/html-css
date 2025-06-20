@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  # = id
+            . = classe
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = filho direto
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 42, 42);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{ /* Visitado */
+            color: darkred;
+        }
+        a:hover{
+            color:black;
+            text-decoration: underline;
+        }
+        a:active{ /* Ativo(click do mouse) */
+            color: blue;
+        }
+
+        a::after{ /* Pseudo-elemento - Adiciona algo após */
+            content: " (link)";
+            color: rgb(0, 243, 170);
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/@alanzoka">Canal do Youtube</a></li>
+        <li><a href="https://bongo.cat/">Site do BongoCat</a></li>
+    </ul>
+</body>
+</html>

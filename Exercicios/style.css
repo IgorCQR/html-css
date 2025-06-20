@@ -1,0 +1,20 @@
+@charset "UTF-8";/* regra; compatibilidade com acentuação */
+
+body {
+    background-color: blanchedalmond;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+h1 {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+h2 {
+    color: rgb(76, 52, 230);
+}
+
+p {
+    text-align: justify;
+}

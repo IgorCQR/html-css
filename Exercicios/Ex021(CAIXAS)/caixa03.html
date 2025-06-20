@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda de imagem</title>
+    <style>
+        h1{ /* Use essas configurações para utilizar uma imagem como borda (muito cuidado com a imagem) */
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('https://imagens.usp.br/wp-content/uploads/Campus-15-Foto-Marcos-Santos20101220_066.jpg');
+            border-image-slice: 90; /* A imagem é dividida em 9 partes, e essa configuração define a parte que será usada como borda */
+            border-image-repeat: repeat;
+            /*também é possivel utilizar shorthand de imageBorder(faça na ordem que está escrito acima)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Borda de Imagens</h1>
+</body>
+</html>

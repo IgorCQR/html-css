@@ -1,0 +1,16 @@
+font-size:
+     Medidas Absolutas: (alguns dispositivos não alcançam o tamanho exato)
+        Cm, mm, in, px, pt, pc
+    
+    Medidas Relativas:
+        Em, Ex, rem, vw, vh, %
+
+Medidas recomendadas: EM(prioridade) e PX(pode sofrer variação)
+
+
+Peso, estilo:
+    weight(peso);
+    style(estilo); 
+
+ShotHand (ordem do codigo): 
+        font-style -> font-weight -> font-size -> font-family
