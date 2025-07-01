@@ -17,22 +17,25 @@ header{
     background-image: linear-gradient(to bottom, #18e761, #0f9c4c, #025939);
     padding: 50px;
     color: white;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.384);
-}
-header > h1, p{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.336);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 nav{
     background-color:#03422b;
-    padding: 3px; 
+    padding: 5px; 
     margin: auto;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.336);
 }
 nav > a{
+    padding: 5px;
     text-decoration: none;
     color: white;
     margin-left: 15px;
     font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 nav > a:hover{
     background-color: #025939;
@@ -45,6 +48,13 @@ span{
 }
 p > a{
     text-decoration: none;
+}
+p a:hover{
+    text-decoration: underline;
+    color: #0f9c4c;
+}
+a.externo::after{
+    content: '\00A0\1F517';
 }
 main{
     background-color: white;
@@ -64,11 +74,12 @@ article > h1{
     font-size: 2em;
 }
 article > h2{
-    background-image: linear-gradient(to right, #7bfaa86e, #92fdc15b, #dcfff231);
+    background-image: linear-gradient(to right, #71fca1, transparent);
+    text-indent: 3px;
 }
 article > p{
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.8;
     margin: 20px;
     text-indent: 25px;
 }
@@ -86,7 +97,8 @@ article > img{
     width: 100%;
 }
 #image02{
-    width:40%;
+    display: block;
+    max-width: 350px;
     margin: auto;
 }
 article > iframe{
@@ -97,7 +109,7 @@ article > iframe{
 }
 #extra{
     background-color: #aaffdc7c;
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -108,31 +120,37 @@ h3{
     width: 100%;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    margin: -20px 0 0 0;
+    margin: -10px -10px 0 -10px;
 }
 aside{
-    display: flex;
     width: 65%;
-    justify-content: space-between;
 }
 aside > ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 aside > ul > li > abbr{
     text-decoration: underline;
 }
+#final{
+    text-align: center;
+}
 footer > p{
     color: white;
     padding: 3px;
+    text-align: center;
 }
 footer{
     background-color: #025939;
     width: 100%;
     margin-bottom: -20px;
 }
-footer > p > a{
+footer a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
 }
